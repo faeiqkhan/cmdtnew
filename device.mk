@@ -16,18 +16,18 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-$(call inherit-product, vendor/xiaomi/riva/riva-vendor.mk)
+$(call inherit-product, vendor/samsung/j2y18lte/j2y18lte-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := xhdpi
+PRODUCT_AAPT_PREF_CONFIG := hdpi
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1280
-TARGET_SCREEN_WIDTH := 720
+TARGET_SCREEN_HEIGHT := 960
+TARGET_SCREEN_WIDTH := 540
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -130,7 +130,7 @@ PRODUCT_PACKAGES += \
     libebtc
 
 # Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := device/xiaomi/riva
+TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/j2y18lte
 
 # Ship Firmware
 PRODUCT_COPY_FILES += \

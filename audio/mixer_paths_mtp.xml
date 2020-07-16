@@ -80,9 +80,6 @@
     <ctl name="EAR_S" value="ZERO" />
     <ctl name="HPHL" value="ZERO" />
     <ctl name="HPHR" value="ZERO" />
-    <ctl name="Lineout_1 amp" value="DISABLE"/> 
-    <ctl name="headset amp" value="DISABLE"/>
-    <ctl name="SPK DAC Switch" value="0" />
     <ctl name="SPK" value="ZERO" />
     <ctl name="WSA Spk Switch" value="ZERO" />
     <ctl name="SpkrMono WSA_RDAC" value="ZERO" />
@@ -983,12 +980,8 @@
     </path>
 
     <path name="speaker">
-        <ctl name="MI2S_RX Channels" value="One" />
-        <ctl name="RX2 MIX1 INP1" value="RX2" />
-        <ctl name="RDAC2 MUX" value="RX2" />
-        <ctl name="HPHR" value="Switch" />
-        <ctl name="Lineout_1 amp" value="ENABLE"/>
-
+        <ctl name="RX3 MIX1 INP1" value="RX1" />
+        <ctl name="SPK" value="Switch" />
     </path>
 
     <path name="speaker-and-hdmi">
@@ -1048,7 +1041,6 @@
         <ctl name="RDAC2 MUX" value="RX2" />
         <ctl name="HPHL" value="Switch" />
         <ctl name="HPHR" value="Switch" />
-        <ctl name="headset amp" value="ENABLE"/>
     </path>
 
     <path name="headset-mic">
@@ -1106,7 +1098,6 @@
     <path name="speaker-and-headphones">
         <path name="speaker" />
         <path name="headphones" />
-        <ctl name="Lineout_1 amp" value="DUALMODE"/>
     </path>
 
     <path name="usb-headphones">

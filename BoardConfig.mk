@@ -120,6 +120,7 @@ ENABLE_CPUSETS := true
 
 # Crypto
 # TARGET_HW_DISK_ENCRYPTION := true
+# TARGET_CRYPTFS_HW_PATH ?= vendor/qcom/opensource/cryptfs_hw
 
 # Dexpreopt
 ifeq ($(HOST_OS),linux)
@@ -153,12 +154,12 @@ USE_DEVICE_SPECIFIC_GPS := true
 TARGET_NO_RPC := true
 
 # Filesystem
-# TARGET_ANDROID_FILESYSTEM_CONFIG_H := $(LOCAL_PATH)/android_filesystem_config.h
+TARGET_ANDROID_FILESYSTEM_CONFIG_H := $(LOCAL_PATH)/android_filesystem_config.h
 
 # Init
-# TARGET_INIT_VENDOR_LIB := libinit_riva
-# TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
-# TARGET_RECOVERY_DEVICE_MODULES := libinit_riva
+# TARGET_INIT_VENDOR_LIB := libinit_j2y18lte
+TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
+# TARGET_RECOVERY_DEVICE_MODULES := libinit_j2y18lte
 
 # Tap2Wake
 # TARGET_TAP_TO_WAKE_NODE := "/proc/gesture/onoff"
